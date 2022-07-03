@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,4 +9,198 @@
 body {
     width: 100%;
     height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Estilização Header*/
+header {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 span {
+    color: #DA2535;
+}
+
+nav.navbar-header li{
+    display: inline-block;
+    color: #292929;
+    font-family: 'Inter', sans-serif;
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+button.btn-navbar {
+    width: 150px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: #292929;
+    font-family: 'Inter', sans-serif;
+}
+
+/*Estilização conteúdo inicial*/
+div.initial-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+div.initial-content h1 {
+    width: 405px;
+    font-size: 48px;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+div.initial-content p{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    width: 520px;
+    height: 119px;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button.btn-container {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;    
+    width: 292px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: #DA2535;
+    color: #FBFBFB;
+}
+
+img.sushi-img {
+    width: 400px;
+    height: 543.7px;
+}
+
+/*Estilização segunda área*/
+div.second-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+img.food-img {
+    width: 604px;
+    height: 500px;
+    border-radius: 16px;
+    margin-left: 50px;
+}
+
+div.container-second-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1.second-section-title {
+    width: 361px;
+    height: 124px;
+    font-size: 48px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+}
+
+p.food-description {
+    width: 500px;
+    height: 114px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+p.food-instruction {
+    width: 392px;
+    height: 29px;
+    color: #DA2535;
+    font-family: 'Inter';
+    font-size: 24px;
+    text-decoration-line: underline;
+}
+
+/*Estilização terceira area*/
+h1.most-popular-foods-section-title {
+    text-align: center;
+}
+
+div.most-popular-foods-section {
+    display: flex;
+    width: 100%;
+    margin-top: 150px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+    
+div.most-popular-foods-grid {
+    display: grid;
+    column-gap: 100px;
+    width: 1300px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.food-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3F3F3;
+    width: 340px;
+    height: 350px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+img.food-photo {
+    margin-top: -100px;
+    width: 209px;
+    height: 209px;
+}
+
+h1.card-title {
+    text-align: center;
+    width: 100%;
+    height: 39px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 60px;
+}
+
+p.card-description {
+    text-align: center;
+    width: 249px;
+    height: 58px;
+    font-family: 'Inter';
+    font-weight: thin;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #616161;
+}
+
+p.card-price {
+    text-align: center;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 5px;
 }
