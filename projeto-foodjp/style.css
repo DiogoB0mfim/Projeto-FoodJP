@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -14,10 +18,35 @@ body {
 
 /*Estilização Header*/
 header {
+    width: 100%;
     display: flex;
-    padding: 20px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    gap: 340px;
+    padding: 20px;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+
+.menu.sticky {
+    background: #000000;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+}
+
+.menu.sticky nav.navbar-header li {
+    color: rgb(255, 255, 255);
+}
+
+.menu.sticky nav.navbar-header a {
+    color: rgb(255, 255, 255);
+}
+
+.menu.sticky button.btn-navbar {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
 }
 
 h1 span {
@@ -28,8 +57,13 @@ nav.navbar-header li{
     display: inline-block;
     color: #292929;
     font-family: 'Inter', sans-serif;
-    margin-left: 50px;
+    margin-left: 80px;
     font-size: 24px;
+}
+
+nav.navbar-header a {
+    text-decoration: none;
+    color: #292929;
 }
 
 button.btn-navbar {
@@ -37,7 +71,7 @@ button.btn-navbar {
     height: 40px;
     border: 2px solid black;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: #292929;
     font-family: 'Inter', sans-serif;
 }
@@ -107,7 +141,7 @@ img.food-img {
 div.container-second-section {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    margin-right: 150px;
 }
 
 h1.second-section-title {
@@ -144,7 +178,6 @@ h1.most-popular-foods-section-title {
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
-    line-height: 59px;
     margin-top: 70px;
 }
 
@@ -157,10 +190,9 @@ div.most-popular-foods-section {
 }
     
 div.most-popular-foods-grid {
-    display: grid;
+    display: flex;
     column-gap: 150px;
     width: 1300px;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 div.food-card {
@@ -168,7 +200,7 @@ div.food-card {
     flex-direction: column;
     align-items: center;
     background-color: #F3F3F3;
-    width: 340px;
+    width: 350px;
     height: 350px;
     border-radius: 8px;
     padding: 10px;
@@ -186,7 +218,7 @@ h1.card-title {
     height: 39px;
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 32px;
+    font-size: 30px;
     margin-top: 60px;
 }
 
@@ -242,7 +274,7 @@ div.comments-container {
 div.comment-card {
     width: 550px;
     height: 290px;
-    background: #F3F3F3;
+    background-color: #F3F3F3;
     border-radius: 16px;
     padding: 30px;
 }
@@ -326,3 +358,291 @@ button.btn-search {
     font-size: 20px;
     color: white;
 }
+
+/*Estilização footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    padding: 30px;
+    margin-top: 80px;
+    background-color: #F3F3F3;
+}
+
+p.info-footer {
+    width: 150px;
+    height: 32px;
+
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/*Estilização menu mobile*/
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: red;
+    margin: 8px;
+}
+
+/*Responsividade mobile*/
+ @media screen and (min-device-width : 320px) and (max-device-width : 768px) {
+    .mobile-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+    .nav-list {
+        display: none;
+    }
+
+    button.btn-navbar {
+        display: none;
+    }
+
+    /*Header*/
+    header {
+        gap: 150px;
+    }
+
+    header h1 {
+        height: 22px;
+        width: 71px;
+        font-family: "Montserrat";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+    
+    /*Conteúdo inicial*/
+    div.container {
+        align-items: center;
+    }
+
+    div.initial-content h1 {
+        height: 39px;
+        width: 270px;
+        left: 24px;
+        top: 104px;
+        font-family: "Montserrat";
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    div.initial-content p{
+        height: 104px;
+        width: 278px;
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 400;         
+    }
+    
+    button.btn-container {
+        height: 40px;
+        width: 312px;
+        border-radius: 6px;
+        padding: 10px, 40px, 10px, 40px;
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    img.sushi-img {
+        display: none;
+    }
+
+    /*Estilização área de instruções*/
+    div.second-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    img.food-img {
+        height: 350px;
+        width: 312px;
+        border-radius: 8px;
+        margin-left: 0px;
+    }
+
+    div.container-second-section {
+        margin-right: 0px;
+        align-items: center;
+    }
+    
+    h1.second-section-title {
+        height: 62px;
+        width: 100%;
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    p.food-description {
+        height: 104px;
+        width: 290px;
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    p.food-instruction {
+        height: 19px;
+        width: 262px;
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    /*Estilização area de comidas populares*/
+    h1.most-popular-foods-section-title {
+        height: 30px;
+        width: 100%;
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-weight: 600;
+    }
+    
+    div.most-popular-foods-grid {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 150px;
+    }
+
+    div.food-card {
+        height: 350px;
+        width: 312px;
+    }
+
+    img.food-photo {
+        margin-top: -100px;
+        width: 209px;
+        height: 209px;
+    }
+
+    h1.card-title {
+        height: 30px;
+        width: 319px;
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /*Estilização área de comentários*/
+
+    div.comments-title-container h1 {
+        height: 30px;
+        width: 100%;
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    div.title-container {
+        width: 1300px;
+    }
+
+    div.comments-container {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    div.comment-card {
+        height: 240px;
+        width: 290px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p.name-card {
+        height: 22px;
+        width: 100%;
+        font-family: "Montserrat";
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    } 
+
+    p.report-card {
+        height: 52px;
+        width: 100%;
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;  
+    }
+
+    img.img-align {
+        height: 60px;
+        width: 60px  
+    }
+
+    img.img-align-stars {
+        margin-top: 20px;
+        height: 19px;
+        width: 122px;
+    }
+
+    /*Estilização área de localização*/
+    img.img-map {
+        height: 242px;
+        width: 340px;
+        border-radius: 8px;
+    }
+
+    input {
+        height: 40px;
+        width: 220px;
+    }
+
+    #input-placeholder::placeholder {
+        height: 15px;
+        width: 143px;
+        font-family: "Inter";
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    button.btn-search {
+        height: 62px;
+        width: 101px;
+    }
+
+    /*Estilização footer*/
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    p.info-footer {
+        height: 16px;
+        width: 117px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+/*769 x 1550*/
