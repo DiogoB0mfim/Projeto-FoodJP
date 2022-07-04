@@ -5,22 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <header>
+    <header class="menu">
         <h1>Food<span>JP</span></h1>
         <nav class="navbar-header">
-            <ul>
-                <li>Inicio</li>
+            <ul class="nav-list">
+                <li><a href="#inicial">Inicio</a></li>
                 <li>Cardápio</li>
                 <li>Sobre</li>
             </ul>
         </nav>
-        <button class="btn-navbar">Entrar</button>
+
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <button class="btn-navbar">Entrar</button>  
     </header>
-    <div class="initial-content">
+    
+    <div class="initial-content" id="inicial">
         <div class="container">
             <h1>Comida Oriental</h1>
             <p>A culinária Japonesa é bastante equilibrada, sendo muito rica em 
@@ -70,16 +78,16 @@
     </div>
     <div class="comments-container">
         <div class="comment-card">
-            <img src="assets/img profile 1.png" alt="imagem de perfil"/>
+            <img src="assets/img profile 1.png" alt="imagem de perfil" class="img-align"/>
             <p class="name-card">Daniele Almeida</p>
             <p class="report-card">Ótimo serviço! Encantada com a qualidade dos pratos.</p>
-            <img src="assets/estrelas.png" alt="imagem estrelas">
+            <img src="assets/estrelas.png" alt="imagem estrelas" class="img-align-stars">
         </div>
         <div class="comment-card">
-            <img src="assets/img profile 2.png" alt="imagem de perfil"/>
+            <img src="assets/img profile 2.png" alt="imagem de perfil" class="img-align"/>
             <p class="name-card">Ricardo França</p>
             <p class="report-card">Não é apenas a comida excelente, o serviço torna a experiência especial.</p>
-            <img src="assets/estrelas.png" alt="imagem estrelas">
+            <img src="assets/estrelas.png" alt="imagem estrelas" class="img-align-stars">
         </div>
     </div>
     
@@ -95,5 +103,25 @@
             <button class="btn-search">Buscar</button>
         </div>
     </div>
+
+    <footer>
+        <h1>Food<span>JP</span></h1>
+            <div>
+                <h2>Contato</h2>
+                <p class="info-footer">+55 21 9999-9999</p>
+                <p class="info-footer">email@gmail.com</p>
+            </div>
+            <div>
+                <h2>Sobre nós</h2>
+                <p class="info-footer">Menu</p>
+                <p class="info-footer">Valores</p>
+                <p class="info-footer">Página principal</p>
+            </div>
+            <div>
+                <h2>Serviço</h2>
+                <p class="info-footer">Entrega</p>
+                <p class="info-footer">Retirada</p>
+            </div>
+    </footer>
 </body>
 </html>
