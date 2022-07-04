@@ -52,7 +52,7 @@ div.initial-content {
 
 div.initial-content h1 {
     width: 405px;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 600;
     font-style: normal;
     margin-bottom: 10px;
@@ -88,7 +88,7 @@ img.sushi-img {
     height: 543.7px;
 }
 
-/*Estilização segunda área*/
+/*Estilização área de instruções*/
 div.second-section {
     display: flex;
     justify-content: space-around;
@@ -113,7 +113,7 @@ div.container-second-section {
 h1.second-section-title {
     width: 361px;
     height: 124px;
-    font-size: 48px;
+    font-size: 40px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -137,9 +137,15 @@ p.food-instruction {
     text-decoration-line: underline;
 }
 
-/*Estilização terceira area*/
+/*Estilização area de comidas populares*/
 h1.most-popular-foods-section-title {
     text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 59px;
+    margin-top: 70px;
 }
 
 div.most-popular-foods-section {
@@ -152,7 +158,7 @@ div.most-popular-foods-section {
     
 div.most-popular-foods-grid {
     display: grid;
-    column-gap: 100px;
+    column-gap: 150px;
     width: 1300px;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -203,4 +209,120 @@ p.card-price {
     font-weight: bold;
     font-size: 30px;
     margin-top: 5px;
+}
+
+/*Estilização área de comentários*/
+div.comments-title-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+div.comments-title-container h1 {
+    width: 318px;
+    height: 59px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+div.title-container {
+    width: 1300px;
+}
+
+div.comments-container {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+div.comment-card {
+    width: 550px;
+    height: 290px;
+    background: #F3F3F3;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+p.name-card {
+    width: 100%;
+    height: 39px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 30px;
+} 
+
+p.report-card {
+    width: 455px;
+    height: 76px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #616161;
+    margin-top: 20px;
+}
+
+/*Estilização área de localização*/
+div#localization {
+    margin-top: 50px;
+}
+
+div.container-map-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+img.img-map {
+    width: 1300px;
+}
+
+div.search-bar {
+    display: flex;
+}
+input {
+    width: 630px;
+    height: 50px;
+    border-top: 1px solid #292929;
+    border-left: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+    border-right: none;
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+#input-placeholder::placeholder {
+    width: 286px;
+    height: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #292929;
+}
+
+button.btn-search {
+    width: 183px;
+    height: 72px;
+    border: none;
+    background: #DA2535;
+    border-radius: 0px 10px 10px 0px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
 }
