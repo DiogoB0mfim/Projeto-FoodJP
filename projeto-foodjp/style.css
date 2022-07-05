@@ -59,6 +59,7 @@ nav.navbar-header li{
     font-family: 'Inter', sans-serif;
     margin-left: 80px;
     font-size: 24px;
+    cursor: pointer;
 }
 
 nav.navbar-header a {
@@ -74,6 +75,7 @@ button.btn-navbar {
     background-color: rgb(255, 255, 255);
     color: #292929;
     font-family: 'Inter', sans-serif;
+    cursor: pointer;
 }
 
 /*Estilização conteúdo inicial*/
@@ -115,6 +117,12 @@ button.btn-container {
     border-radius: 10px;
     background-color: #DA2535;
     color: #FBFBFB;
+    cursor: pointer;
+}
+
+button.btn-container:hover {
+    background-color: #83161f;
+    transition: 0.3s;
 }
 
 img.sushi-img {
@@ -169,6 +177,7 @@ p.food-instruction {
     font-family: 'Inter';
     font-size: 24px;
     text-decoration-line: underline;
+    cursor: pointer;
 }
 
 /*Estilização area de comidas populares*/
@@ -178,7 +187,8 @@ h1.most-popular-foods-section-title {
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
-    margin-top: 70px;
+    margin-top: 100px;
+    margin-bottom: -20px;
 }
 
 div.most-popular-foods-section {
@@ -351,12 +361,17 @@ button.btn-search {
     border: none;
     background: #DA2535;
     border-radius: 0px 10px 10px 0px;
-    
+    cursor: pointer;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     color: white;
+}
+
+button.btn-search:hover {
+    background-color: #83161f;
+    transition: 0.3s;
 }
 
 /*Estilização footer*/
@@ -392,7 +407,7 @@ p.info-footer {
 }
 
 /*Responsividade mobile*/
- @media screen and (min-device-width : 320px) and (max-device-width : 768px) {
+ @media screen and (min-device-width : 320px) and (max-device-width : 1500px) {
     .mobile-menu {
         display: block;
         cursor: pointer;
@@ -526,7 +541,7 @@ p.info-footer {
 
     div.food-card {
         height: 350px;
-        width: 312px;
+        width: 280px;
     }
 
     img.food-photo {
@@ -566,7 +581,7 @@ p.info-footer {
 
     div.comment-card {
         height: 240px;
-        width: 290px;
+        width: 240px;
         border-radius: 8px;
         display: flex;
         flex-direction: column;
@@ -606,13 +621,13 @@ p.info-footer {
     /*Estilização área de localização*/
     img.img-map {
         height: 242px;
-        width: 340px;
+        width: 310px;
         border-radius: 8px;
     }
 
     input {
         height: 40px;
-        width: 220px;
+        width: 190px;
     }
 
     #input-placeholder::placeholder {
@@ -645,4 +660,3 @@ p.info-footer {
     }
 }
 
-/*769 x 1550*/
