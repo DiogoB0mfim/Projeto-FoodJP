@@ -13,7 +13,13 @@
 <h2>👨‍💻 Desafio(s)</h2>
 • Responsividade ✔
 
-<h2>Preview</h2>
-![image](https://user-images.githubusercontent.com/98038433/177415345-81525413-60a6-4dbb-aab3-94a2aaa69776.png)
-![image](https://user-images.githubusercontent.com/98038433/177415396-8a9e294b-5132-4140-b93e-6c2016d6ae3d.png)
-![image](https://user-images.githubusercontent.com/98038433/177415443-e40a7f88-ddc7-4dc5-9ea7-f58a2e284399.png)
+<h2>🖥 Preview Desktop</h2>
+<img src="https://i.imgur.com/JlrJrPh.png"/>
+<img src="https://i.imgur.com/kRe5uff.png"/>
+<img src="https://i.imgur.com/7h6hw8G.png"/>
+
+<h2>📱 Preview Mobile</h2>
+<img src="https://i.imgur.com/nt0ZOTU.png"/>
+<img src="https://i.imgur.com/VV93TOP.png"/>
+<img src="https://i.imgur.com/gYlvwlW.png"/>
+<img src="https://i.imgur.com/hkVetct.png"/>
