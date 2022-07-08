@@ -11,7 +11,9 @@
 
 
 <h2>👨‍💻 Desafio(s)</h2>
-• Responsividade ✔
+• Responsividade Desktop ✔
+• Responsividade Mobile ✔
+• Responsividade outros dispositivos ⏳
 
 <h2>🖥 Preview Desktop</h2>
 <img src="https://i.imgur.com/JlrJrPh.png"/>
