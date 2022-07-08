@@ -1,5 +1,5 @@
 <h1 align="center">Projeto FoodJP</h1>
-<p align="justify">O site FoodJP é um projeto proposto no desafio nº27 da comunidade Codelandia, com o design desenvolvido pelo Iuri Silva. Utilizei deste desafio para evoluir meu conhecimento em HTML, CSS, JavaScript e alguns conceitos básicos.</p>
+<p> align="justify">O site FoodJP é um projeto proposto no desafio nº27 da comunidade Codelandia, com o design desenvolvido pelo Iuri Silva. Utilizei deste desafio para evoluir meu conhecimento em HTML, CSS, JavaScript e alguns conceitos básicos.</p>
 
 <a href="https://projeto-foodjp.vercel.app/">• Deploy (Vercel)</a><br/>
 <a href="https://www.figma.com/file/zQlKp4h1TN43IE2nbzbOiQ/Desafios---Codel%C3%A2ndia-(Copy)?node-id=107523%3A1216">• Layout Figma</a>
@@ -11,9 +11,9 @@
 
 
 <h2>👨‍💻 Desafio(s)</h2>
-• Responsividade Desktop ✔
-• Responsividade Mobile ✔
-• Responsividade outros dispositivos ⏳
+<p>• Responsividade Desktop ✔</p>
+<p>• Responsividade Mobile ✔</p>
+<p>• Responsividade outros dispositivos ⏳</p>
 
 <h2>🖥 Preview Desktop</h2>
 <img src="https://i.imgur.com/JlrJrPh.png"/>
